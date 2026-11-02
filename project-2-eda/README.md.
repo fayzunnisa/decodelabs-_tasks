@@ -1,0 +1,36 @@
+# Exploratory Data Analysis: DecodeLabs Project 2
+
+Exploratory analysis of 1,200 customer orders (Jan 2023 to Jun 2025),
+using the cleaned dataset from Project 1.
+
+## Questions answered
+- What does a typical order look like?
+- Are there outliers, and are they errors or real?
+- Which products perform best?
+- How do sales change over time?
+- How many orders are actually delivered?
+
+## Key findings
+- Mean order value is 1,053.97 but the median is 823.62 (right-skewed data)
+- 8 high-value outliers: genuine 5-unit orders, kept in the data
+- UnitPrice (r = 0.72) affects order value slightly more than Quantity (r = 0.62)
+- Chair and Printer earn the most (about 195.6k each); Phone earns the least
+- Only about 19% of orders were delivered; about 41% were cancelled or returned
+- First-half revenue fell about 10% each year (2023 to 2025)
+
+## Methods
+Descriptive statistics, IQR outlier detection, correlation analysis,
+group comparisons.
+
+## Tools
+Google Colab, Python (pandas), Google Sheets
+
+## Files
+- EDA_notebook.ipynb: the analysis code
+- EDA_summary.pdf: executive summary
+- Decode labs P1 - Cleaned Data set.xlsx: the cleaned dataset
+
+## Limitations
+Revenue includes cancelled and returned orders, so real revenue is likely
+lower. TotalPrice is before coupon discounts. Patterns shown here are not
+proof of cause.
